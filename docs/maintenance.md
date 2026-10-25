@@ -178,11 +178,12 @@ account can actually review the owner's pull requests. Keep the bypass list as
 narrow as possible and treat every use of it as a recorded exception, not the
 normal merge path.
 
-## Pinned actions and Dependabot
+## Pinned actions and Renovate
 
 Every `uses:` entry is pinned to a 40-character commit SHA. A trailing comment
-records the human-readable release. Dependabot opens weekly updates for GitHub
-Actions. Treat a SHA update like a dependency change: inspect upstream release
+records the human-readable release. Renovate (`.github/workflows/renovate.yml`,
+policy in `renovate.json`) opens weekly updates for GitHub Actions and never
+merges them. Treat a SHA update like a dependency change: inspect upstream release
 notes and diff, let CI run, apply a patch bump, and merge only after review.
 
 Container images are pinned as follows: the link checker runs on an immutable
