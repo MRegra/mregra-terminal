@@ -7,6 +7,17 @@ and the project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-10-25
+
+### Changed
+
+- GitHub Actions updates now come from a self-hosted Renovate workflow
+  (`.github/workflows/renovate.yml`, policy in `renovate.json`) instead of
+  Dependabot version updates. Scope is unchanged (workflow actions only), PRs
+  still carry `dependencies` and `release:patch`, and Renovate never merges
+  them: a maintainer adds the patch bump and merges after review. GitHub's
+  Dependabot security alerts stay on.
+
 ## [0.1.3] - 2026-08-24
 
 ### Changed
@@ -131,6 +142,7 @@ and the project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Open-source governance, maintenance, contribution, and security policies.
 
 [Unreleased]: https://github.com/SoBatista/sobatista-terminal/compare/v0.1.1...HEAD
+[0.1.4]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.4
 [0.1.2]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.2
 [0.1.1]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.1
 [0.1.0]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.0

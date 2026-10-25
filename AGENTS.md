@@ -28,8 +28,8 @@ These instructions apply to the entire repository.
 - Keep public aliases and functions documented in `docs/commands.md` and in the
   relevant `termhelp` topic.
 - Keep `VERSION`, `CHANGELOG.md`, release notes, and release metadata consistent.
-- Pin every GitHub Action to a full commit SHA. Dependabot is responsible for
-  proposing reviewed updates.
+- Pin every GitHub Action to a full commit SHA. Renovate (`renovate.json`) is responsible
+  for proposing reviewed updates.
 - Do not add fabricated screenshots. Only accept captures from the configured
   Terminator environment after a sensitivity review.
 

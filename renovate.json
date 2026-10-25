@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>MRegra/fedora-workstation-scripts//renovate/default"],
+  "description": [
+    "Scope mirrors the Dependabot config this replaces: GitHub Actions only, Mondays before 9am Europe/Zurich, labels dependencies + release:patch, chore(deps) commits.",
+    "Never automerge: every PR needs a maintainer-added patch bump (VERSION, README, CHANGELOG) before the release-metadata check passes, and CONTRIBUTING forbids automation merging to main."
+  ],
+  "enabledManagers": ["github-actions"],
+  "addLabels": ["release:patch"],
+  "semanticCommits": "enabled",
+  "semanticCommitType": "chore",
+  "semanticCommitScope": "deps",
+  "automerge": false,
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "description": ["Runners stay on ubuntu-24.04 deliberately (ci.yml needs its apt configobj): no runner-label bumps."],
+      "matchManagers": ["github-actions"],
+      "matchDepTypes": ["github-runner"],
+      "enabled": false
+    },
+    {
+      "description": ["Repo policy wins over the shared preset's automerge rule."],
+      "matchPackageNames": ["*"],
+      "automerge": false
+    }
+  ]
+}
