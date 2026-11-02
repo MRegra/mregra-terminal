@@ -7,6 +7,13 @@ and the project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.6] - 2026-11-02
+
+### Changed
+
+- `renovatebot/github-action` in the Renovate workflow moves from `v46.3.9` to
+  `v46.3.10` (pinned by commit SHA).
+
 ## [0.1.5] - 2026-10-26
 
 ### Changed
@@ -149,6 +156,7 @@ and the project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Open-source governance, maintenance, contribution, and security policies.
 
 [Unreleased]: https://github.com/SoBatista/sobatista-terminal/compare/v0.1.1...HEAD
+[0.1.6]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.6
 [0.1.5]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.5
 [0.1.4]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.4
 [0.1.2]: https://github.com/SoBatista/sobatista-terminal/releases/tag/v0.1.2
