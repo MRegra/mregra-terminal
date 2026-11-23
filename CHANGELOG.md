@@ -7,6 +7,13 @@ and the project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [0.1.9] - 2026-11-23
+
+### Changed
+
+- `renovatebot/github-action` in the Renovate workflow moves from `v46.3.13` to
+  `v46.3.14` (pinned by commit SHA).
+
 ## [0.1.8] - 2026-11-16
 
 ### Changed
