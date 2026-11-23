@@ -18,7 +18,7 @@ authorized security work.
 
 </div>
 
-Version: `0.1.8`
+Version: `0.1.9`
 
 > [!NOTE]
 > Screenshots are real, sanitized captures from the configured Terminator
